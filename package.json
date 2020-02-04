@@ -1,7 +1,6 @@
 {
-  "name": "perfectpersonnelapp",
+  "name": "perfectFarmerapp",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "engines": {
     "node": "8.1.1",
@@ -23,5 +22,15 @@
     "mongoose": "^5.8.11",
     "passport": "^0.4.1",
     "passport-google-oauth20": "^2.0.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hushBridge/FARMERS_HUB.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hushBridge/FARMERS_HUB/issues"
+  },
+  "homepage": "https://github.com/hushBridge/FARMERS_HUB#readme",
+  "description": ""
 }
