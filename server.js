@@ -36,7 +36,7 @@ app.use(passport.session());
 require("./routes/authRoutes")(app);
 
 //proxy configuration
-require("./client/src/setupProxy")(app);
+// require("./client/src/setupProxy")(app);
 //
 ////////////////////////////////////////
 //server ROUTES
