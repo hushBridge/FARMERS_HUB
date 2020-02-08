@@ -9,21 +9,27 @@ module.exports = app => {
       scope: ["profile", "email"]
     })
   );
-  //
-  app.get("/auth/google/callback", passport.authenticate("google"));
+  //redirecting after successful authentication of user
+  app.get(
+    "/auth/google/callback",
+    passport.authenticate("google"),
+    (req, res) => {
+      res.redirect("/Dashboard"); // you can change the redirect to fit your app
+    }
+  );
   //
   app.get("/api/logout", (req, res) => {
     req.logout();
-    res.send(req.user);
+    // res.send(req.user);
+    //A/
+    //B/
+    res.redirect("/");
   });
   //
   app.get("/api/current_user", (req, res) => {
     res.send(req.user);
   });
-  //google verification route
-  app.get("/googleb0a9be55b6273eba.html", (req, res) => {
-    res.send("//");
-  });
+
   // app.get(
   //   "/auth/google/callback",
   //   passport.authenticate("google", { failureRedirect: "/login" }),

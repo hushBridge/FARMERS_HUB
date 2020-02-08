@@ -12,7 +12,8 @@ module.exports = app => {
   //
   app.get("/auth/google/callback", passport.authenticate("google"));
   //
-  app.get("/", (req, res) => {
-    res.send(`hello ${process.env.USERNAME}`);
-  });
+  // app.get("/", (req, res) => {
+  //   res.send(`hello ${process.env.USERNAME}`);
+  // });
+  //
 };

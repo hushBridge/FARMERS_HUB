@@ -6,9 +6,9 @@ const userSchema = new Schema({
   username: String
 });
 
-const compUserSchema = new Schema({
-  username: String,
-  os: String
-});
+// const compUserSchema = new Schema({
+//   username: String,
+//   os: String
+// });
 mongoose.model("users", userSchema);
-mongoose.model("usersComp", compUserSchema);
+// mongoose.model("usersComp", compUserSchema);
